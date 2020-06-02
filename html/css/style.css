@@ -237,7 +237,7 @@ input[type=password] {
 }
 
 .detail-content .detail-container {
-    background-color: violet;
+    background-color: white;
     width: 100%;
 }
 
@@ -245,5 +245,89 @@ input[type=password] {
     width: 100%;
     height: 270px;
     background-color: yellow;
+}
+
+.detail-container .detail-cover #cover-half {
+    width: 100%;
+    height: 270px;
+}
+
+.detail-container .cover-book {
+    display: flex;
+    width: 230px;
+    height: 319px;
+    margin-left: auto;
+    margin-top: -150px;
+    margin-right: 40px;
+}
+
+.detail-container .detail-book {
+    display: flex;
+    margin-left: 25px;
+}
+
+.detail-container .detail-book .detail-book-genre {
+    background-color: #FBCC38;
+    color: white;
+    border-radius: 15px;
+    width: 70px;
+    height: 25px;
+    padding-top: 5px;
+    padding-left: 25px;
+    margin-top: -140px;
+    margin-left: 15px;
+}
+
+.detail-container .detail-book .detail-book-genre h3{
+    color: white;
+    border-radius: 15px;
+    width: 70px;
+    height: 25px;
+    margin-top: -1px;
+}
+
+.detail-container .detail-book .detail-book-info {
+    width: 100%;
+    margin-top: -110px;
+    display: flex;
+}
+
+.detail-book .detail-book-info .detail-book-title h2 {
+    margin-left: -80px;
+}
+
+.detail-book .detail-book-info .detail-book-title h3 {
+    margin-top: -10px;
+    margin-left: -80px;
+    font-size: 13px;
+}
+
+.detail-book .detail-book-info .detail-book-status h4 {
+    margin-left: 350px;
+}
+
+.detail-book .detail-book-info .detail-book-description {
+    margin-left: -100px;
+    margin-right: 70%;
+}
+
+.detail-book .detail-book-info .detail-book-description p {
+    margin-top: 150px;
+    margin-left: -400px;
+}
+
+.detail-book .detail-book-info .btn-borrow {
+    padding-left: 30px;
+    padding-top: 30px;
+    background-color: #FBCC38;
+    border-radius: 6px;
+    margin-right: 70%;
+    margin-top: 300px;
+    border: none;
+}
+
+.detail-book .detail-book-info .btn-borrow button {
+    margin-left: 490px;
+    margin-top: 130px;
 }
 
