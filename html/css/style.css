@@ -277,7 +277,14 @@ body {
 
 
 /*dashboard*/
-.sidebar {
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    height: 100%;
+}
+
+.dashboard .sidebar {
     width: 250px;
     background-color: white;
     box-shadow: 2px 5px 5px rgba(0,0,0,0.5);
@@ -286,7 +293,7 @@ body {
     z-index: 2;
 }
 
-.sidebar .profile {
+.dashboard .sidebar .profile {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -294,27 +301,27 @@ body {
     align-items: center;
 }
 
-.sidebar .profile .profile-img {
+.dashboard .sidebar .profile .profile-img {
     margin-top: 10px;
     font-weight: bold;
     font-size: 20px;    
 }
 
-.sidebar .profile .profile-name {
+.dashboard .sidebar .profile .profile-name {
     margin-top: 10px;
     font-weight: bold;
     font-size: 20px;
         
 }
 
-.sidebar .menu {
+.dashboard .sidebar .menu {
     list-style-type: none;
     padding: 0;
     margin: 0;
     margin-top: 10px;
 }
 
-.sidebar .menu .item {
+.dashboard .sidebar .menu .item {
     height: 40px;
     display: flex;
     align-items: center;
@@ -323,12 +330,12 @@ body {
     font-size: 18px;
 }
 
-.content {
+.dashboard .content {
     width: 100%;
     margin-left: 250px;
 }
 
-.content .navbar {
+.dashboard .content .navbar {
     background-color: white;
     box-shadow: 2px 5px 5px rgba(0,0,0,0.5);
     display: flex;
@@ -340,28 +347,28 @@ body {
     z-index: 1;
 }
 
-.content .navbar .navbar-item {
+.dashboard .content .navbar .navbar-item {
     list-style-type: none;
     margin: 0;
     padding: 0;
     padding-left: 40px;
 }
 
-.content .navbar .navbar-item li {
+.dashboard .content .navbar .navbar-item li {
     display: inline-block;
     padding-left: 10px;
     padding-right: 10px;
     font-weight: bold;
 }
 
-.content .navbar .search-wraper {
+.dashboard .content .navbar .search-wraper {
     flex: 1;
     display: flex;
     justify-content: center;
 
 }
 
-.content .navbar .search-wraper .input-search {
+.dashboard .content .navbar .search-wraper .input-search {
     width: 60%;
     height: 30px;
     border-radius: 40px;
@@ -371,48 +378,48 @@ body {
 
 }
 
-.content .navbar .search-wraper .input-search:focus {
+.dashboard .content .navbar .search-wraper .input-search:focus {
     outline: none;
 }
 
-.content .navbar .brand {
+.dashboard .content .navbar .brand {
     padding-right: 40px;
     display: flex;
     align-items: center;
 }
 
-.content .navbar .brand .text {
+.dashboard .content .navbar .brand .text {
     font-weight: bold;
     font-size: 25px;
 }
 
-.content .container {
+.dashboard .content .container {
     padding: 30px;
     margin-top: 80px;
 }
 
-.content .container .list-book {
+.dashboard .content .container .list-book {
     display: flex;
 }
 
-.content .container .list-book .card {
+.dashboard .content .container .list-book .card {
     box-shadow: 2px 5px 5px rgba(0,0,0,0.5);
     margin: 20px;
     border-radius: 10px;
 }
 
-.content .container .list-book .card .card-img {
+.dashboard .content .container .list-book .card .card-img {
    background-color: grey;
    height: 150px;
    border-top-left-radius: 10px;
    border-top-right-radius: 10px;
 }
 
-.content .container .list-book .card .card-text {
+.dashboard .content .container .list-book .card .card-text {
     padding: 15px
 }
 
-.content .container .list-book .card .card-text .title {
+.dashboard .content .container .list-book .card .card-text .title {
     text-align: center;
     font-weight: bold;
     font-size: 10px;
