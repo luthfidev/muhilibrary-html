@@ -6,38 +6,45 @@
     <title>Detail</title>
     <link rel="stylesheet" href="./css/style.css" type="text/css"/>
 </head>
-<body>
+<body class="detail">
+    <div class="detail-header">
+        <div class="back">
+            <a href="#" class="btn-back">Back</a>
+        </div>
+        <div class="action">
+            <a href="#">Edit</a>
+            <a href="#">Delete</a>
+        </div>
+    </div>
     <div class="detail-content">
-        <div class="detail-container">
-            <div class="detail-cover">
-                <img id="cover-half" src="./img/cover-half.png">
-                <div class="detail-btn">
-                    <div class="back"></div>
-                    <div class="edit"></div>
-                    <div class="delete"></div>
+        <div class="left">
+            <div class="badge">
+                <span>Novel</span>
+            </div>
+            <div class="info">
+                <div class="title">
+                    <h2>Dilan 1990</h2>
                 </div>
-                <div class="cover-book">
-                    <img id="cover-book" src="./img/cover-book.png">
-                </div>
-            <div class="detail-book">
-                <div class="detail-book-genre">
-                    <h3>Novel</h3>
-                </div>
-                <div class="detail-book-info">
-                    <div class="detail-book-title">
-                        <h2>Dilan</h2>
-                        <h3>30 Juni 2019</h3>
-                    </div>
-                    <div class="detail-book-status">
-                        <h4>Available</h4>
-                    </div>
-                    <div class="detail-book-description">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quasi aliquam excepturi a minima dignissimos, minus voluptas in laboriosam deleniti inventore mollitia ea sit soluta commodi obcaecati eaque. Sint, ex.</p>
-                    </div>
-                    <button class="btn-borrow">Borrow</button>
+                <div class="status">
+                    <span>Available</span>
                 </div>
             </div>
+            <div class="release">
+                <span>20 Januari 2020</span>
+            </div>
+            <div class="description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus explicabo sint dolores quae! Non quod mollitia commodi facilis aspernatur aperiam qui cumque consectetur ipsam fugiat! Quidem quasi corporis doloribus provident dolore blanditiis, velit magni officia voluptatibus non cumque repellat tempora tenetur tempore voluptates vero, nesciunt fugit adipisci eveniet, consequatur eos exercitationem reprehenderit cupiditate? Ipsa possimus quaerat ab consectetur ea doloremque ducimus asperiores voluptatem voluptates alias quibusdam suscipit dolor reiciendis, laudantium praesentium provident at recusandae earum eligendi facilis obcaecati inventore fugiat?</p>
+            </div>
         </div>
+        <div class="right">
+            <div class="cover">
+                <img src="./img/cover-book.png">
+            </div>
+            <div class="borrow">
+                <a href="#" class="btn-borrow">Borrow</a>
+            </div>
+
+        </div>      
     </div>
 </body>
 </html>
