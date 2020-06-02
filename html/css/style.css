@@ -239,7 +239,7 @@ body {
     margin-right: 15px;
 }
 
-.register .register-content .form .submit .btn-login:hover {
+.register .register-content .form .submit .btn-register:hover {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
 }
 
@@ -252,7 +252,7 @@ body {
     text-decoration: none;
 }
 
-.register .register-content .form .submit .btn-signup:hover {
+.register .register-content .form .submit .btn-login:hover {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
 }
 
@@ -421,43 +421,63 @@ body {
 
 /*detail*/
 
-.detail-content {
+.detail {
     display: flex;
-    width: 100%;
-    height:  100%;
+    flex: 1;
+    flex-direction: column;
 }
 
-.detail-content .detail-container {
+.detail .detail-header {
+    flex: 2;
+    background-color: teal;
+    display: flex;
+    justify-content: space-between;
+    background-image: url('../img/cover-half.png');
+    background-size: cover;
+}
+
+.detail .detail-header .back {
+    margin-top: 45px;
+    margin-left: 15px;
+}
+
+.detail .detail-header .back a {
     background-color: white;
-    width: 100%;
+    padding: 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
 }
 
-.detail-container .detail-cover {
-    width: 100%;
-    height: 270px;
-    background-color: yellow;
+.detail .detail-header .action {
+    flex-direction: row;
+    margin-top: 45px;
+    margin-right: 15px;
 }
 
-.detail-container .detail-cover #cover-half {
-    width: 100%;
-    height: 270px;
+.detail .detail-header .action a {
+   margin-right: 10px;
+   text-decoration: none;
+   color: grey;
+   font-weight: bold;
+   font-size: 20px;
 }
 
-.detail-container .cover-book {
+.detail .detail-content {
+    flex: 3;
+
     display: flex;
-    width: 230px;
-    height: 319px;
-    margin-left: auto;
-    margin-top: -150px;
-    margin-right: 40px;
+    flex-direction: row;
 }
 
-.detail-container .detail-book {
-    display: flex;
-    margin-left: 25px;
+.detail .detail-content .left {
+    flex: 4;
+    flex-direction: row;
+    margin-left: 40px;
 }
 
-.detail-container .detail-book .detail-book-genre {
+.detail .detail-content .left .badge {
+    margin-top: 20px;
     background-color: #FBCC38;
     color: white;
     border-radius: 15px;
@@ -465,60 +485,59 @@ body {
     height: 25px;
     padding-top: 5px;
     padding-left: 25px;
-    margin-top: -140px;
-    margin-left: 15px;
+    margin-bottom: -20px;
 }
 
-.detail-container .detail-book .detail-book-genre h3{
-    color: white;
-    border-radius: 15px;
-    width: 70px;
-    height: 25px;
-    margin-top: -1px;
-}
-
-.detail-container .detail-book .detail-book-info {
-    width: 100%;
-    margin-top: -110px;
+.detail .detail-content .left .info {
     display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    margin-top: -20px;
 }
 
-.detail-book .detail-book-info .detail-book-title h2 {
-    margin-left: -80px;
+.detail .detail-content .left .info .title h2 {
+    font-size: 40px;
 }
 
-.detail-book .detail-book-info .detail-book-title h3 {
-    margin-top: -10px;
-    margin-left: -80px;
-    font-size: 13px;
+.detail .detail-content .left .info .status span {
+    color: lawngreen;
 }
 
-.detail-book .detail-book-info .detail-book-status h4 {
-    margin-left: 350px;
+.detail .detail-content .left .release {
+    margin-top: -30px;
 }
 
-.detail-book .detail-book-info .detail-book-description {
-    margin-left: -100px;
-    margin-right: 70%;
+.detail .detail-content .left .description {
+    margin-top: 40px;
 }
 
-.detail-book .detail-book-info .detail-book-description p {
-    margin-top: 150px;
-    margin-left: -400px;
+.detail .detail-content .right {
+    flex: 2;
+    flex-direction: column;
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
 }
 
-.detail-book .detail-book-info .btn-borrow {
-    padding-left: 30px;
-    padding-top: 30px;
+.detail .detail-content .right .cover img {
+    margin-top: -200px;
+   
+}
+
+.detail .detail-content .right .borrow {
+  margin-bottom: 100px;
+}
+
+.detail .detail-content .right .borrow a {
     background-color: #FBCC38;
-    border-radius: 6px;
-    margin-right: 70%;
-    margin-top: 300px;
-    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
 }
-
-.detail-book .detail-book-info .btn-borrow button {
-    margin-left: 490px;
-    margin-top: 130px;
-}
-
