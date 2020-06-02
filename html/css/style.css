@@ -13,82 +13,273 @@ body {
 }
 
 /*login*/
-.login-content {
-    width: 1440px;
-    height: 1024px;
+
+.login {
+    margin: 0px;
     display: flex;
+    flex-direction: row;
+}
+
+.login .login-bg {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.2), rgba(0, 0, 0, 0.73)), url('../img/bg-login.jpg');
+    background-size: contain;
+    background-color: blue;
+    flex: 3;
+}
+
+.login .login-bg .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-left: 20px;
+}
+
+.login .login-bg .text .bg-watermark {
+    color: white;
+}
+
+.login .login-bg .bg-text h1 {
+    color: white;
+    margin-right: 200px;
+}
+
+.login .login-content {
     flex: 2;
-}
-
-.login-content .bg-img {
-    background-image: url('../img/bg-login.jpg');
-    width: 800px;
-    height: 1024px;
-    background-size:cover;
-    z-index: 2;
-}
-
-
-.login-content .login-container {
-    background-color: springgreen;
-    width: 559px;
-    height: 1024px;
     display: flex;
+    flex-direction: column;
 }
 
-#logo {
-    width: 100px;
-    height: 100px;
+.login .login-content .logo {
+    flex: 2;
+    align-self: flex-end;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.login .login-content .form {
+    flex: 4;
+    align-self: center;
+}
+
+.login .login-content .form .text-login h1 {
+    font-weight: bold;
+    margin-bottom: -10px;
+    font-size: 40px;
+}
+
+.login .login-content .form .input {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+}
+
+.login .login-content .form .input:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+}
+
+.login .login-content .form .input .field input {
+    outline: none; 
+    padding-right: 25px;
+    padding-top: 20px;
+    width: 300px;
+}
+
+.login .login-content .form .tnc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 12px;
+    align-items: center;
+    margin-bottom: 20px;
+} 
+
+.login .login-content .form .tnc .forgot a {
+    text-decoration: none;
+    color: black;
+}
+
+.login .login-content .form .submit .btn-login {
+    width: 75px;
+    height: 36px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.login .login-content .form .submit .btn-login:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+}
+
+.login .login-content .form .submit .btn-signup {
+    padding: 9px;
+    background-color: white;
+    border: 1px solid;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.login .login-content .form .submit .btn-signup:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+}
+
+.login .login-content .footer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+
+.login .login-content .footer .footer-1 {
+    color: gray;
+    margin-top: 20px;
+    margin-bottom: -30px;
+}
+
+.login .login-content .footer .footer-2 a {
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+}
+/*register*/
+
+.register {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.register .register-bg {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.2), rgba(0, 0, 0, 0.73)), url('../img/bg-login.jpg');
+    background-size: contain;
+    background-color: blue;
+    flex: 3;
+}
+
+.register .register-bg .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-left: 20px;
+}
+
+.register .register-bg .text .bg-watermark {
+    color: white;
+}
+
+
+.register .register-bg .bg-text h1 {
+    color: white;
+    margin-right: 200px;
+}
+
+.register .register-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.register .register-content .logo {
+    flex: 2;
+    align-self: flex-end;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.register .register-content .form {
+    flex: 4;
+    align-self: center;
+}
+
+.register .register-content .form .text-register {
+    flex: 1;
+}
+
+.register .register-content .form .text-register h1{
+    font-weight: bold;
+    margin-bottom: -10px;
+    font-size: 40px;
+}
+
+.register .register-content .form .input {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
     
 }
 
-.login-content .login-container #logo {
-    justify-content: flex-end;
+.register .register-content .form .input:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
 }
 
-.login-content .login-container .login-form {
-    width: 200px;
-    height: 200px;
-    align-self: center;
-
+.register .register-content .form .input .field input {
+    outline: none; 
+    padding-right: 25px;
+    padding-top: 20px;
+    width: 350px
 }
 
-.login-container .login-form .fields {
-    padding: 0px;
-}
-
-input[type=email] {
-    padding: 5px;
-  }
-input[type=password] {
-    padding: 5px;
-    margin-bottom: 15px;
-  }
-
-#btn-login {
-    padding: 5px 15px;
+.register .register-content .form .submit .btn-register {
+    width: 75px;
+    height: 36px;
     background-color: black;
-    color: white;
-    text-decoration: none;
     border: none;
+    color: white;
     border-radius: 5px;
-  }
+    margin-right: 15px;
+}
 
-  #signup {
-    padding: 5px 15px;
-    background-color:white;
-    color: grey;
+.register .register-content .form .submit .btn-login:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+}
+
+.register .register-content .form .submit .btn-login {
+    padding: 9px;
+    background-color: white;
+    border: 1px solid;
+    color: black;
+    border-radius: 5px;
     text-decoration: none;
-    border: 1;
-    border-radius: 5px;
-  }
+}
 
-/*register*/
+.register .register-content .form .submit .btn-signup:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+}
+
+.register .register-content .footer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+
+.register .register-content .footer .footer-1 {
+    color: gray;
+    margin-top: 20px;
+    margin-bottom: -30px;
+}
+
+.register .register-content .footer .footer-2 a {
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+}
+
 
 /*dashboard*/
 .sidebar {
     width: 250px;
-    background-color: blue;
+    background-color: white;
     box-shadow: 2px 5px 5px rgba(0,0,0,0.5);
     height: 100%;
     position: fixed;
@@ -138,7 +329,7 @@ input[type=password] {
 }
 
 .content .navbar {
-    background-color: blue;
+    background-color: white;
     box-shadow: 2px 5px 5px rgba(0,0,0,0.5);
     display: flex;
     align-items: center;
